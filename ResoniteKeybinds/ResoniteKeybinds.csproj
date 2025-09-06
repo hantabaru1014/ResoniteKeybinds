@@ -4,9 +4,9 @@
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>ResoniteKeybinds</RootNamespace>
         <AssemblyTitle>ResoniteKeybinds</AssemblyTitle>
-        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1</AssemblyVersion>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-        <TargetFramework>net462</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
         <FileAlignment>512</FileAlignment>
         <Deterministic>true</Deterministic>
         <ResonitePath>$(MSBuildThisFileDirectory)Resonite</ResonitePath>
@@ -24,17 +24,20 @@
             <HintPath Condition="Exists('$(ResonitePath)0Harmony.dll')">$(ResonitePath)0Harmony.dll</HintPath>
         </Reference>
         <Reference Include="Elements.Core">
-            <HintPath>$(ResonitePath)Resonite_Data\Managed\Elements.Core.dll</HintPath>
+            <HintPath>$(ResonitePath)Elements.Core.dll</HintPath>
         </Reference>
         <Reference Include="FrooxEngine">
-            <HintPath>$(ResonitePath)Resonite_Data\Managed\FrooxEngine.dll</HintPath>
+            <HintPath>$(ResonitePath)FrooxEngine.dll</HintPath>
         </Reference>
+		<Reference Include="Renderite.Shared">
+			<HintPath>$(ResonitePath)Renderite.Shared.dll</HintPath>
+		</Reference>
         <Reference Include="ResoniteModLoader">
             <HintPath>$(ResonitePath)Libraries\ResoniteModLoader.dll</HintPath>
             <HintPath Condition="Exists('$(ResonitePath)ResoniteModLoader.dll')">$(ResonitePath)ResoniteModLoader.dll</HintPath>
         </Reference>
         <Reference Include="Newtonsoft.Json">
-            <HintPath>$(ResonitePath)Resonite_Data\Managed\Newtonsoft.Json.dll</HintPath>
+            <HintPath>$(ResonitePath)Newtonsoft.Json.dll</HintPath>
         </Reference>
     </ItemGroup>
 
